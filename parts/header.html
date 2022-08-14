@@ -1,0 +1,13 @@
+<!-- Menu et en-tête -->
+
+<header>
+    <div id="menubar" class="fas fa-bars"></div>
+
+    <a href="#" id="logo">{{ title }}</a>
+
+    <nav id="navbar">
+        {% for item in links %}
+        <a href="{{ item.href }}">{{ item.text }}</a>
+        {% endfor %}
+    </nav>
+</header>

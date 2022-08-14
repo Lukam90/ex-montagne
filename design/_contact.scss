@@ -1,0 +1,84 @@
+/* CONTACT */
+
+/* Section "Contact" */
+
+#contact {
+    background-image: url("images/backgrounds/bg-contact-savoie-ou-bien.jpg");
+    background-size: cover;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Formulaire de réservation */
+
+#contact form {
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    width: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+}
+
+/* Titre d'un champ */
+
+#contact label {
+    font-size: 2rem;
+}
+
+/* Champ et liste de choix */
+
+#contact input, select {
+    border: .1rem dashed rgba(0, 0, 0, .5);
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+/* Champ d'un formulaire (texte, date) */
+
+#contact input {
+    color: #333;
+    text-transform: none;
+
+    &[type="checkbox"] {
+        width: 5%;
+    }
+
+    &:hover {
+        border: .1rem solid rgba(0, 0, 0, .5);
+    }
+
+    &:focus {
+        border: .2rem solid rgba(0, 0, 255, .5);
+    }
+}
+
+/* Ligne du formulaire */
+
+#contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Conteneur d'un champ */
+
+#contact .input-box {
+    padding: .5rem 0;
+}
+
+/* Contact > Ecran <= 768 px */
+
+@media (max-width:768px) {
+    #contact form {
+        width: 80%;
+    }
+}

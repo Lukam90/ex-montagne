@@ -1,0 +1,20 @@
+[
+    {
+        "src" : "rene-dupont",
+        "alt" : "photo, témoignage, client, jeune homme souriant",
+        "name" : "René Dupont",
+        "text" : "En tant qu'amateur de ski, de VTT et de snowboard, je me suis bien amusé !"
+    },
+    {
+        "src" : "melanie-duchemin",
+        "alt" : "photo, témoignage, client, jeune femme souriante",
+        "name" : "Mélanie Duchemin",
+        "text" : "La montagne, ça nous gagne !"
+    },
+    {
+        "src" : "david-goodenough",
+        "alt" : "photo, témoignage, client, jeune homme satisfait, bouche ouverte, pouce en l'air",
+        "name" : "David Goodenough",
+        "text" : "It was just amazing !"
+    }
+]

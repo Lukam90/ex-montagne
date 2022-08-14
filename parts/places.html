@@ -1,0 +1,25 @@
+<!-- Destinations  -->
+
+<section id="places">
+    <h2>Destinations</h2>
+
+    <div id="places-grid">
+        {% for item in places %}
+        <div class="box">
+            <img src="images/places/chalet-{{ item.src }}.jpg" alt="{{ item.alt }}" />
+
+            <div class="content">
+                <h3>{{ item.name }}</h3>
+                
+                <p>{{ item.text }}</p>
+                
+                <div class="stars">
+                    {% include "parts/stars.html" %}
+                </div>
+                
+                <div class="price">dès {{ item.price }},00 €</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

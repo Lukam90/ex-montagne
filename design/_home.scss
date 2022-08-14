@@ -1,0 +1,109 @@
+/* --- HOME --- */
+
+/* Section "Accueil" / Diaporama */
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+
+/* Titres */
+
+#home h1 {
+    font-size: 54px;
+}
+
+#home h2 {
+    font-size: 36px;
+}
+
+/* Diaporama */
+
+#slideshow h1,
+#slideshow h2 {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Images / Slides */
+    
+#slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Animation de fondu */
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+/* Conteneur d'une diapo */
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+/* Points de transition */
+
+#dots {
+    margin: 25px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #666;
+    border-radius: 50%;
+    display: inline-block;
+
+    &:hover {
+        background-color: #666;
+    }
+}
+
+/* Point d'une diapo active */
+
+.active {
+    background-color: black;
+}
+
+/* Keyframes > Animation de fondu */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+  
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}

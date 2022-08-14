@@ -1,0 +1,26 @@
+[
+    {
+        "href" : "#home",
+        "text" : "Accueil"
+    },
+    {
+        "href" : "#places",
+        "text" : "Destinations"
+    },
+    {
+        "href" : "#services",
+        "text" : "Services"
+    },
+    {
+        "href" : "#gallery",
+        "text" : "Photos"
+    },
+    {
+        "href" : "#contact",
+        "text" : "Réserver"
+    },
+    {
+        "href" : "cv/cv.html",
+        "text" : "CV"
+    }
+]

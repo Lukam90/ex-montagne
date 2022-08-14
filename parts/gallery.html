@@ -1,0 +1,13 @@
+<!-- Galerie  -->
+
+<section id="gallery">
+    <h1>Galerie</h1>
+
+    <div id="gallery-grid">
+        {% for item in gallery %}
+        <div class="box">
+            <img src="images/gallery/{{ item.src }}.jpg" alt="{{ item.alt }}" />
+        </div>
+        {% endfor %}
+    </div>
+</section>

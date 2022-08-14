@@ -1,0 +1,38 @@
+[
+    {
+        "src" : "lac-barques-montagne",
+        "alt" : "lac, barques, montagnes, reflets"
+    },
+    {
+        "src" : "vaches-vallee",
+        "alt" : "vaches, herbe, plaine, montagne"
+    },
+    {
+        "src" : "parapente-montagne",
+        "alt" : "montagnes, ciel bleu, nuages, parapente, neige"
+    },
+    {
+        "src" : "telesieges-skis-neige",
+        "alt" : "télésièges, skieurs, montagne, sapins, neige"
+    },
+    {
+        "src" : "snowboard-montagne-brume",
+        "alt" : "homme sur son snowboard, montagne au loin, neige, nuages, brume"
+    },
+    {
+        "src" : "chemin-fleuri-montagne",
+        "alt" : "chemin, fleurs roses, herbes, montagne enneigée"
+    },
+    {
+        "src" : "randonneur-sommet-montagne",
+        "alt" : "randonneur, montagnes, falaise, sommet, relief, ciel bleu"
+    },
+    {
+        "src" : "table-verre-fondue",
+        "alt" : "fondue, table en verre, intérieur de chalet, feu de cheminée, détente"
+    },
+    {
+        "src" : "cyclistes-montagne-neige",
+        "alt" : "cyclistes, VTT, neige, montagne"
+    }
+]

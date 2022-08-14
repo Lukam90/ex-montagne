@@ -1,0 +1,58 @@
+/* --- FOLLOW --- */
+
+/* Section "Suivez-nous !" */
+
+#follow {
+    background-image: url("images/backgrounds/bg-suivre-savoie-ou-bien.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+/* Bloc des icônes sociales */
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+/* Icônes sociales */
+
+#socials i {
+    font-size: 48px;
+    margin-right: 25px;
+
+    &.fa-facebook-square,
+    &.fa-linkedin-in {
+        color: blue;
+    }
+
+    &.fa-twitter {
+        color: lightskyblue;
+    }
+
+    &.fa-snapchat-ghost {
+        color: green;
+    }
+
+    &.fa-pinterest {
+        color: red;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+/* Ecran <= 450 px */
+
+@media (max-width:450px) {
+    #socials {
+        display: block;
+    }
+}

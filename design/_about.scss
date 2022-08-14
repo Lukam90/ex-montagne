@@ -1,0 +1,31 @@
+/* --- ABOUT --- */
+
+/* Section "A Propos" */
+
+#about {
+    text-align: center;
+
+    background-image: url("images/backgrounds/bg-apropos-savoie-ou-bien.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* A Propos > Numéro de téléphone */
+
+#about p {
+    font-size: 20px;
+}
+
+/* A Propos > Adresse postale */
+    
+#about address {
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* A Propos > Numéro de téléphone */
+
+#about .phone {
+    font-weight: bold;
+}

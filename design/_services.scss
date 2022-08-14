@@ -1,0 +1,86 @@
+/* --- SERVICES --- */
+
+/* Bloc "Services" */
+
+#services {
+    background-image: url("images/backgrounds/bg-services-savoie-ou-bien.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Grille des services */
+
+#services-grid {
+    display: flex;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+/* Conteneur d'un service */
+
+#services .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 15px;
+
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+/* Icônes des services */
+
+#services i {
+    padding: 1rem;
+    font-size: 5rem;
+
+    &.fa-bed {
+        color: brown;
+    }
+
+    &.fa-utensils {
+        color: orange;
+    }
+
+    &.fa-hiking {
+        color: blue;
+    }
+
+    &.fa-spa {
+        color: green;   
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+/* Nom d'un service */
+
+#services h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Description d'un service */
+
+#services p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Ecran <= 768 px */
+
+@media (max-width:768px) {
+    #services .box-container {
+        display: block;
+        width: 100%;
+    }
+    
+    #services .box {
+        margin-left: 0;
+    }
+}

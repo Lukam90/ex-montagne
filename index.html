@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Savoie ou Bien ?</title>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Style -->
+
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+<!-- En-tête -->
+
+<header>
+    <div id="menubar" class="fas fa-bars"></div>
+
+    <a href="#" id="logo">La Savoie ou Bien ?</a>
+
+    <nav id="navbar">
+        <a href="#home">Accueil</a>
+        <a href="#places">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Photos</a>
+        <a href="#contact">Réserver</a>
+        <a href="cv/cv.html">CV</a>
+    </nav>
+</header>
+
+<!-- Accueil  -->
+
+<section id="home">
+    <h1>Un séjour en Savoie, ça vous tente ?</h1>
+
+    <h2>Venez découvrir la montagne avec nous !</h2>
+
+    <div id="slideshow">
+        <div class="slide">            
+            <img src="/ex-montagne/images/slides/slide-chalet-hauteurs.jpg" alt="chalet, hauteurs, montagne" />
+        </div>
+        
+        <div class="slide">
+            <img src="/ex-montagne/images/slides/slide-lac-montagne.jpg" alt="lac, barques, montagnes, sapins, reflet" />
+        </div>
+        
+        <div class="slide">            
+            <img src="/ex-montagne/images/slides/slide-vaches-vallee.jpg" alt="vaches, vallée, herbe, sapins, montagnes" />
+        </div>
+
+        <div class="slide">            
+            <img src="/ex-montagne/images/slides/slide-chemin-montagne.jpg" alt="sentier, herbes, fleurs, pierres, montagnes enneigées" />
+        </div>
+
+        <div class="slide">            
+            <img src="/ex-montagne/images/slides/slide-randonneur-sommet.jpg" alt="randonneur, sommet, falaise, montagnes, relief, ciel" />
+        </div>
+    </div>
+    
+    <!-- The dots / circles -->
+
+    <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <button>Allez !</button>
+</section>
+
+<!-- Destinations  -->
+
+<section id="places">
+    <h2>Destinations</h2>
+
+    <div id="places-grid">
+        <div class="box">
+            <img src="/ex-montagne/images/places/chalet-colline.jpg" alt="chalet, colline, vallée, sapins" />
+
+            <div class="content">
+                <h3>Albertville</h3>
+                
+                <p>Cette ville est célèbre pour avoir accueilli les XVIème Jeux Olympiques d'Hiver de 1992.</p>
+                
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                
+                <div class="price">dès 90,00 €</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/ex-montagne/images/places/chalet-balcons-fleuris.jpg" alt="chalet, balcons fleuris, voiture, vallée, herbe, sapins, arbres" />
+            
+            <div class="content">
+                <h3>Chamonix</h3>
+            
+                <p>Cette destination est très prisée des amateurs d'alpinisme et de sports de montagne.</p>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                
+                <div class="price">dès 120,00 €</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/ex-montagne/images/places/chalet-ciel-bleu.jpg" alt="chalet, ciel bleu, hauteur, montagne" />
+            
+            <div class="content">
+                <h3>Chambéry</h3>
+            
+                <p>On surnomme cette ville la "Cité des Ducs".</p>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                
+                <div class="price">dès 100,00 €</div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="/ex-montagne/images/places/chalet-hauteurs-neige.jpg" alt="chalet, hauteurs, neige, montagne, sapins" />
+            
+            <div class="content">
+                <h3>Saint-Gervais-les-Bains</h3>
+            
+                <p>Les amateurs de SPAs en haute montagne seront ravis.</p>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            
+                <div class="price">dès 150,00 €</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/ex-montagne/images/places/chalet-entree-neige.jpg" alt="chalet, entrée, neige" />
+            
+            <div class="content">
+                <h3>Aix-les-Bains</h3>
+            
+                <p>Une ville surplombée par son magnifique lac et son paysage montagnard.</p>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            
+                <div class="price">dès 180,00 €</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/ex-montagne/images/places/mini-chalet-neige-sapins.jpg" alt="mini-chalet, neige, arbres, sapins" />
+            
+            <div class="content">
+                <h3>Annecy</h3>
+            
+                <p>Cette ville est connue pour son lac.</p>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            
+                <div class="price">dès 120,00 €</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services  -->
+
+    <section id="services">
+        <h2>Services</h2>
+
+        <div id="services-grid">
+            <div class="box">
+                <i class="fas fa-bed"></i>
+                
+                <h3>Hébergement</h3>
+                
+                <p>Avec notre choix de chalets, vous ne serez pas déçus !</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                
+                <h3>Restauration</h3>
+                
+                <p>Les amateurs de fondue et de raclette trouveront leur compte !</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                
+                <h3>Activités</h3>
+                
+                <p>Entre le ski, la randonnée, le snowboard, le VTT et les baignades, il y a de quoi faire !</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-spa"></i>
+                
+                <h3>Bien-Être</h3>
+                
+                <p>Rien de tel qu'un bon SPA en haute montagne pour se ressourcer !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie  -->
+
+    <section id="gallery">
+        <h1>Galerie</h1>
+
+        <div id="gallery-grid">
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/lac-barques-montagne.jpg" alt="lac, barques, montagnes, reflets" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/vaches-vallee.jpg" alt="vaches, herbe, plaine, montagne" />
+            </div>
+
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/parapente-montagne.jpg" alt="montagnes, ciel bleu, nuages, parapente, neige" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/telesieges-skis-neige.jpg" alt="télésièges, skieurs, montagne, sapins, neige" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/snowboard-montagne-brume.jpg" alt="homme sur son snowboard, montagne au loin, neige, nuages, brume" />
+            </div>
+
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/chemin-fleuri-montagne.jpg" alt="chemin, fleurs roses, herbes, montagne enneigée" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/randonneur-sommet-montagne.jpg" alt="randonneur, montagnes, falaise, sommet, relief, ciel bleu" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/table-verre-fondue.jpg" alt="fondue, table en verre, intérieur de chalet, feu de cheminée, détente" />
+            </div>
+            
+            <div class="box">
+                <img src="/ex-montagne/images/gallery/cyclistes-montagne-neige.jpg" alt="cyclistes, VTT, neige, montagne" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis  -->
+
+    <section id="review">
+        <h2>Avis</h2>
+
+        <div class="testimonial-box">
+            <img src="/ex-montagne/images/reviews/avatar-rene-dupont.jpg" alt="photo, témoignage, client, jeune homme souriant" />
+
+            <div class="text-box">
+                <p class="customer">René Dupont</p>
+        
+                <p class="testimonial">En tant qu'amateur de ski, de VTT et de snowboard, je me suis bien amusé !</p>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-box">
+            <img src="/ex-montagne/images/reviews/avatar-melanie-duchemin.jpg" class="right" alt="photo, témoignage, client, jeune femme souriante" />
+
+            <div class="text-box">
+                <p class="customer">Mélanie Duchemin</p>
+                
+                <p class="testimonial">La montagne, ça nous gagne !</p>
+                
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-box">
+            <img src="/ex-montagne/images/reviews/avatar-david-goodenough.jpg" class="left" alt="photo, témoignage, client, jeune homme satisfait, bouche ouverte, pouce en l'air" />
+            
+            <div class="text-box">
+                <p class="customer">David Goodenough</p>
+            
+                <p class="testimonial">It was just amazing !</p>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réservations  -->
+
+    <section class="book" id="contact">
+        <h1>Réserver</h1>
+
+        <div class="row">
+            <form action="#" method="post">
+                <div class="input-box">
+                    <label for="names">Prénom et Nom</label>
+                    
+                    <input type="text" name="names" id="names" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Adresse e-mail</label>
+                    
+                    <input type="email" name="email" id="email" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="telephone">Téléphone</label>
+                    
+                    <input type="phone" name="telephone" id="telephone" />
+                </div>
+
+                <div class="input-box">
+                    <label for="place">Destination</label>
+
+                    <select name="place" id="place">
+                        <option value="Albertville">Albertville</option>
+                        <option value="Chamonix">Chamonix</option>
+                        <option value="Chambéry">Chambéry</option>
+                        <option value="Saint-Gervais-les-Bains">Saint-Gervais-les-Bains</option>
+                        <option value="Aix-les-Bains">Aix-les-Bains</option>
+                        <option value="Annecy">Annecy</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="nbPers">Nombre de personnes</label>
+                    
+                    <input type="number" min="1" max="120" value="1" name="nbPers" id="nbPers" />
+                </div>
+
+                <div class="input-box">
+                    <label for="date-arrivee">Date d'arrivée</label>
+                    
+                    <input type="date" name="date-arrivee" id="date-arrivee" />
+                </div>
+
+                <div class="input-box">
+                    <label for="date-depart">Date de départ</label>
+                    
+                    <input type="date" name="date-depart" id="date-depart" />
+                </div>
+
+                <div class="input-box">
+                    <input type="checkbox" name="consent" id="consent" required />
+
+                    <label for="consent">J'accepte que mes données soient utilisées à des fins de réservation.</label>
+                </div>
+
+                <button>Réserver maintenant</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- A Propos -->
+
+    <section id="about">
+        <h1>A propos</h1>
+
+        <p>Nous sommes une agence de voyages et de passionnés de montagne, spécialisée dans les séjours en Savoie.</p>
+
+        <hr />
+
+        <p>Vous pouvez nous contacter au <span class="phone">+33 12 34 45 67</span> ou nous retrouver à l'adresse suivante :</p>
+
+        <hr />
+
+        <address>
+        La Savoie ou Bien<br />
+        123 rue de la Montagne<br />
+        74 000 Annecy
+        </address>
+    </section>
+
+    <!-- Suivez-nous -->
+
+    <section id="follow">
+        <h1>Suivez-nous !</h1>
+
+        <div id="socials">
+            <a href="#">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-pinterest"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pied de page  -->
+
+    <footer>
+        <p>Réalisé par <a href="https://www.linkedin.com/in/lucien-hamm/">L. H.</a> à titre d'exercice &copy; 2021 - <a href="mentions.html" target="_blank" rel="noopener noreferrer">Mentions Légales</a></p>
+    </footer>
+
+    <!-- Barre de cookies -->
+
+    <div id="cookies">
+        <p>Des cookies sont utilisés pour améliorer l'expérience utilisateur. <button>J'accepte.</button></p>
+    </div>
+
+    <!-- JS  -->
+
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/cookies.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+/* --- PLACES --- */
+
+/* Section "Destinations" */
+
+/* Grille des destinations */
+
+#places-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+/* Conteneur d'une destination */    
+
+#places .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+/* Image d'une destination */
+
+#places img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 25rem;
+    width: 100%;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+/* Contenu d'une destination */
+
+#places .content {
+    padding: 2rem;
+}
+
+/* Nom d'une destination */
+
+#places h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Description d'une destination */
+
+#places p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+/* Etoile de notation */
+
+#places i {
+    font-size: 1.7rem;
+    color: orange;
+}
+
+/* Prix d'une destination */
+
+#places .price {
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+/* Ecran <= 768 px */
+
+@media (max-width:768px) {
+    #places-grid {
+        display: block;
+        width: 100%;
+    }
+
+    #places .box {
+        margin-left: 0;
+    }
+}

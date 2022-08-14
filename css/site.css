@@ -1,0 +1,705 @@
+@charset "UTF-8";
+/* --- GENERAL --- */
+/* Police d'écriture (Nunito) */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+/* Sélecteurs globaux */
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+/* --- ELEMENTS --- */
+/* Sections */
+section {
+  padding: 2rem 9%;
+}
+
+/* Titres */
+h1, h2 {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 36px;
+}
+
+/* Boutons */
+button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: orange;
+  padding: .8rem 3rem;
+  border: .2rem solid orange;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+button:hover {
+  background: rgba(255, 165, 0, 0.2);
+  color: orange;
+}
+
+/* --- HEADER --- */
+/* Barre d'en-tête / menu */
+header {
+  background-image: url("images/backgrounds/bg-footer-savoie-ou-bien.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  margin-bottom: 10px;
+}
+
+/* Titre-Logo */
+#logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+#logo:hover {
+  color: brown;
+}
+
+/* Liens de navigation */
+nav a {
+  color: black;
+  font-size: 2rem;
+  margin: 0 .8rem;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+/* Ecran <= 768 px */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  nav a {
+    display: block;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #222;
+  }
+}
+
+/* --- MENUBAR --- */
+/* Barre de menu (?) */
+#menubar {
+  color: #fff;
+  border: .1rem solid #fff;
+  border-radius: .5rem;
+  font-size: 3rem;
+  padding: .5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Ecran <= 768 px */
+@media (max-width: 768px) {
+  #menubar {
+    display: initial;
+  }
+}
+
+/* --- HOME --- */
+/* Section "Accueil" / Diaporama */
+#home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+/* Titres */
+#home h1 {
+  font-size: 54px;
+}
+
+#home h2 {
+  font-size: 36px;
+}
+
+/* Diaporama */
+#slideshow h1,
+#slideshow h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Images / Slides */
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Animation de fondu */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+/* Conteneur d'une diapo */
+.slide {
+  display: none;
+  text-align: center;
+}
+
+/* Points de transition */
+#dots {
+  margin: 25px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #666;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: #666;
+}
+
+/* Point d'une diapo active */
+.active {
+  background-color: black;
+}
+
+/* Keyframes > Animation de fondu */
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* CONTACT */
+/* Section "Contact" */
+#contact {
+  background-image: url("images/backgrounds/bg-contact-savoie-ou-bien.jpg");
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Formulaire de réservation */
+#contact form {
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+}
+
+/* Titre d'un champ */
+#contact label {
+  font-size: 2rem;
+}
+
+/* Champ et liste de choix */
+#contact input, select {
+  border: 0.1rem dashed rgba(0, 0, 0, 0.5);
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+/* Champ d'un formulaire (texte, date) */
+#contact input {
+  color: #333;
+  text-transform: none;
+}
+
+#contact input[type="checkbox"] {
+  width: 5%;
+}
+
+#contact input:hover {
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus {
+  border: 0.2rem solid rgba(0, 0, 255, 0.5);
+}
+
+/* Ligne du formulaire */
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Conteneur d'un champ */
+#contact .input-box {
+  padding: .5rem 0;
+}
+
+/* Contact > Ecran <= 768 px */
+@media (max-width: 768px) {
+  #contact form {
+    width: 80%;
+  }
+}
+
+/* --- PLACES --- */
+/* Section "Destinations" */
+/* Grille des destinations */
+#places-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Conteneur d'une destination */
+#places .box {
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+/* Image d'une destination */
+#places img {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 25rem;
+  width: 100%;
+}
+
+#places img:hover {
+  opacity: 0.5;
+}
+
+/* Contenu d'une destination */
+#places .content {
+  padding: 2rem;
+}
+
+/* Nom d'une destination */
+#places h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Description d'une destination */
+#places p {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+/* Etoile de notation */
+#places i {
+  font-size: 1.7rem;
+  color: orange;
+}
+
+/* Prix d'une destination */
+#places .price {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+/* Ecran <= 768 px */
+@media (max-width: 768px) {
+  #places-grid {
+    display: block;
+    width: 100%;
+  }
+  #places .box {
+    margin-left: 0;
+  }
+}
+
+/* --- SERVICES --- */
+/* Bloc "Services" */
+#services {
+  background-image: url("images/backgrounds/bg-services-savoie-ou-bien.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Grille des services */
+#services-grid {
+  display: flex;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Conteneur d'un service */
+#services .box {
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  margin-left: 15px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Icônes des services */
+#services i {
+  padding: 1rem;
+  font-size: 5rem;
+}
+
+#services i.fa-bed {
+  color: brown;
+}
+
+#services i.fa-utensils {
+  color: orange;
+}
+
+#services i.fa-hiking {
+  color: blue;
+}
+
+#services i.fa-spa {
+  color: green;
+}
+
+#services i:hover {
+  opacity: 0.5;
+}
+
+/* Nom d'un service */
+#services h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Description d'un service */
+#services p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Ecran <= 768 px */
+@media (max-width: 768px) {
+  #services .box-container {
+    display: block;
+    width: 100%;
+  }
+  #services .box {
+    margin-left: 0;
+  }
+}
+
+/* --- GALLERY --- */
+/* Section "Galerie" */
+/* Grille des images */
+#gallery-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Conteneur d'une image */
+#gallery .box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 1rem solid #fff;
+  border-radius: .5rem;
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+/* Image de la galerie */
+#gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#gallery img:hover {
+  transform: scale(1.5);
+}
+
+/* Ecran <= 768 px */
+@media (max-width: 768px) {
+  #gallery-grid {
+    display: block;
+    width: 100%;
+  }
+  #gallery .box {
+    margin-left: 0;
+  }
+}
+
+/* --- REVIEW --- */
+/* Section "Avis" */
+#review {
+  background-image: url("images/backgrounds/bg-avis-savoie-ou-bien.jpg");
+  background-size: cover;
+}
+
+/* Conteneur d'un témoignage */
+#review .testimonial-box {
+  padding: 2rem;
+  margin-bottom: 30px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+}
+
+/* Photo d'un client */
+#review img {
+  float: left;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+/* Conteneur du texte */
+#review .text-box {
+  display: table;
+  margin-top: -30px;
+}
+
+/* Nom d'un client */
+#review .customer {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+/* Témoignage d'un client */
+#review .testimonial {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+/* Bloc de notation */
+#review .stars {
+  padding: 1rem 0;
+}
+
+/* Etoile de notation */
+#review i {
+  color: orange;
+  font-size: 1.7rem;
+}
+
+/* --- ABOUT --- */
+/* Section "A Propos" */
+#about {
+  text-align: center;
+  background-image: url("images/backgrounds/bg-apropos-savoie-ou-bien.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* A Propos > Numéro de téléphone */
+#about p {
+  font-size: 20px;
+}
+
+/* A Propos > Adresse postale */
+#about address {
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* A Propos > Numéro de téléphone */
+#about .phone {
+  font-weight: bold;
+}
+
+/* --- FOLLOW --- */
+/* Section "Suivez-nous !" */
+#follow {
+  background-image: url("images/backgrounds/bg-suivre-savoie-ou-bien.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+/* Bloc des icônes sociales */
+#socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Icônes sociales */
+#socials i {
+  font-size: 48px;
+  margin-right: 25px;
+}
+
+#socials i.fa-facebook-square, #socials i.fa-linkedin-in {
+  color: blue;
+}
+
+#socials i.fa-twitter {
+  color: lightskyblue;
+}
+
+#socials i.fa-snapchat-ghost {
+  color: green;
+}
+
+#socials i.fa-pinterest {
+  color: red;
+}
+
+#socials i:hover {
+  opacity: 0.5;
+}
+
+/* Ecran <= 450 px */
+@media (max-width: 450px) {
+  #socials {
+    display: block;
+  }
+}
+
+/* --- FOOTER --- */
+/* Pied de page */
+footer {
+  background-image: url("images/backgrounds/bg-footer-savoie-ou-bien.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+/* Lien du pied de page */
+footer a {
+  color: blue;
+}
+
+footer a:hover {
+  color: green;
+}
+
+/* --- COOKIES --- */
+/* Barre des cookies */
+#cookies {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+/* Texte d'information */
+#cookies p {
+  font-size: 20px;
+}
+
+/* Bouton d'acceptation */
+#cookies button {
+  font-size: 24px;
+  color: green;
+  background: transparent;
+  background-color: rgba(255, 255, 0, 0.25);
+  margin-left: 20px;
+}
+
+/* --- MEDIA QUERIES --- */
+/* Ecran <= 450 px */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading span {
+    font-size: 2.5rem;
+  }
+  input, select {
+    width: 100%;
+  }
+}
+
+/* Ecran <= 500 px */
+@media (max-width: 500px) {
+  .box {
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+}
+
+/* Ecran <= 991 px */
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+/* Ecran <= 1200 px */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+/*# sourceMappingURL=site.css.map */

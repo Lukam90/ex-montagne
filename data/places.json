@@ -1,0 +1,44 @@
+[
+    {
+        "src" : "colline",
+        "alt" : "chalet, colline, vallée, sapins",
+        "name" : "Albertville",
+        "text" : "Cette ville est célèbre pour avoir accueilli les XVIème Jeux Olympiques d'Hiver de 1992.",
+        "price" : 90
+    },
+    {
+        "src" : "balcons-fleuris",
+        "alt" : "chalet, balcons fleuris, voiture, vallée, herbe, sapins, arbres",
+        "name" : "Chamonix",
+        "text" : "Cette destination est très prisée des amateurs d'alpinisme et de sports de montagne.",
+        "price" : 120
+    },
+    {
+        "src" : "ciel-bleu",
+        "alt" : "chalet, ciel bleu, hauteur, montagne",
+        "name" : "Chambéry",
+        "text" : "On surnomme cette ville la \"Cité des Ducs\".",
+        "price" : 100
+    },
+    {
+        "src" : "hauteurs-neige",
+        "alt" : "chalet, hauteurs, neige, montagne, sapins",
+        "name" : "Saint-Gervais-les-Bains",
+        "text" : "Les amateurs de SPAs en haute montagne seront ravis.",
+        "price" : 150
+    },
+    {
+        "src" : "entree-neige",
+        "alt" : "chalet, entrée, neige",
+        "name" : "Aix-les-Bains",
+        "text" : "Une ville surplombée par son magnifique lac et son paysage montagnard.",
+        "price" : 180
+    },
+    {
+        "src" : "neige-sapins",
+        "alt" : "mini-chalet, neige, arbres, sapins",
+        "name" : "Annecy",
+        "text" : "Cette ville est connue pour son lac.",
+        "price" : 120
+    }
+]

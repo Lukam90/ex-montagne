@@ -1,0 +1,62 @@
+/* --- REVIEW --- */
+
+/* Section "Avis" */
+
+#review {
+    background-image: url("images/backgrounds/bg-avis-savoie-ou-bien.jpg");
+    background-size: cover;
+}
+
+/* Conteneur d'un témoignage */
+
+#review .testimonial-box {
+    padding: 2rem;
+    margin-bottom: 30px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+/* Photo d'un client */
+
+#review img {
+    float: left;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+/* Conteneur du texte */
+
+#review .text-box {
+    display: table;
+    margin-top: -30px;
+}
+
+/* Nom d'un client */
+
+#review .customer {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+/* Témoignage d'un client */
+
+#review .testimonial {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/* Bloc de notation */
+
+#review .stars {
+    padding: 1rem 0;
+}
+
+/* Etoile de notation */
+
+#review i {
+    color: orange;
+    font-size: 1.7rem;
+}

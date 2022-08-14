@@ -1,0 +1,21 @@
+<!-- Avis  -->
+
+<section id="review">
+    <h2>Avis</h2>
+
+    {% for item in reviews %}
+    <div class="testimonial-box">
+        <img src="images/reviews/avatar-{{ item.src }}.jpg" alt="{{ item.alt }}" />
+
+        <div class="text-box">
+            <p class="customer">{{ item.name }}</p>
+    
+            <p class="testimonial">{{ item.text }}</p>
+
+            <div class="stars">
+                {% include "parts/stars.html" %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>

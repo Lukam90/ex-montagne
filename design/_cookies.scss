@@ -1,0 +1,28 @@
+/* --- COOKIES --- */
+
+/* Barre des cookies */
+
+#cookies {
+    width: 100%;
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+/* Texte d'information */
+
+#cookies p {
+    font-size: 20px;
+}
+
+/* Bouton d'acceptation */
+
+#cookies button {
+    font-size: 24px;
+    color: green;
+    background: transparent;
+    background-color: rgba(255, 255, 0, 0.25);
+    margin-left: 20px;
+}

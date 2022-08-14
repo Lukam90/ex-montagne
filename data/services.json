@@ -1,0 +1,22 @@
+[
+    {
+        "icon" : "bed",
+        "title" : "Hébergement",
+        "desc" : "Avec notre choix de chalets, vous ne serez pas déçus !"
+    },
+    {
+        "icon" : "utensils",
+        "title" : "Restauration",
+        "desc" : "Les amateurs de fondue et de raclette trouveront leur compte !"
+    },
+    {
+        "icon" : "hiking",
+        "title" : "Activités",
+        "desc" : "Entre le ski, la randonnée, le snowboard, le VTT et les baignades, il y a de quoi faire !"
+    },
+    {
+        "icon" : "spa",
+        "title" : "Bien-Être",
+        "desc" : "Rien de tel qu'un bon SPA en haute montagne pour se ressourcer !"
+    }
+]
